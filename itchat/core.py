@@ -67,7 +67,7 @@ class Core(object):
             it is defined in components/login.py
         '''
         raise NotImplementedError()
-    def get_QR(self, uuid=None, enableCmdQR=False, picDir=None, qrCallback=None):
+    def get_QR(self, uuid=None, enableCmdQR=False, picDir=None, qrCallback=None, enablePrintQR=True):
         ''' download and show qrcode
             for options
                 - uuid: if uuid is not set, latest uuid you fetched will be used
